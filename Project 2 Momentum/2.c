@@ -14,7 +14,7 @@
 #include<stdio.h>
 
 main(){
-    float unit,rs1,rs2,rs3,rs4;
+    float unit,rs1,rs2,rs3,rs4,price1,price2;
      
 
     printf("Enter the unit=");
@@ -26,16 +26,29 @@ main(){
     rs4= unit*1.50;
 
     if(unit <= 50){
-        printf("The bill=%f",rs1*0.20);
+        price1=rs1*0.20;
+        price2=price1+rs1;
+
+        printf("The bill=%f",price2);
     }
     else if(unit > 50 && unit <=150) {
-        printf("The bill=%f",rs2*0.20);
+        
+        price1=rs2*0.20;
+        price2=price1+rs2;
+        printf("The bill=%f",price2);
     }
     else if(unit > 150 && unit <= 250){
-        printf("The bill=%f",rs3,0.20);
+        
+        price1=rs3*0.20;
+        price2=price1+rs3;
+        printf("The bill=%f",price2);
     }
     else{
-        printf("The bill=%f",rs4*0.20);
+        
+        price1=rs4*0.20;
+        price2=price1+rs4;
+
+        printf("The bill=%f\n",price2);
     }
 
     
