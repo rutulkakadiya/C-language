@@ -15,7 +15,7 @@
 void main()
 {
     int unit;
-    float amt, amtount, charge;
+    float amt, ammount, charge;
 
 
     printf("Enter total units : ");
@@ -42,9 +42,9 @@ void main()
    printf("\namt=%f",amt);
 
     charge = amt * 0.20;
-    amtount  = amt + charge;
+    ammount  = amt + charge;
 
-    printf("\nElectricity Bill = Rs. %.2f", amtount);
+    printf("\nElectricity Bill = Rs. %.2f", ammount);
 
    
 }
